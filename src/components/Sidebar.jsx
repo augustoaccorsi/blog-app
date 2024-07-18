@@ -1,6 +1,6 @@
-import React from 'react';
 import styles from './Sidebar.module.css';
 import { FaPencilAlt } from 'react-icons/fa';
+import Avatar from './Avatar';
 
 const Sidebar = () => {
     return (
@@ -11,10 +11,7 @@ const Sidebar = () => {
             />
 
             <div className={styles.profile}>
-                <img
-                    className={styles.avatar}
-                    src="https://avatars.githubusercontent.com/u/19434267?v=4"
-                />
+                <Avatar image="https://github.com/augustoaccorsi.png" />
                 <strong>Augusto Accorsi</strong>
                 <span>Web Developer</span>
             </div>
