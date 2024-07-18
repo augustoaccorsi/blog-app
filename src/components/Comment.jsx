@@ -23,7 +23,12 @@ const Comment = (props) => {
                             </time>
                         </div>
                         <button title="Deletar Comentário">
-                            <FaTrashAlt sixe={15} />
+                            <FaTrashAlt
+                                sixe={15}
+                                onClick={() =>
+                                    props.handleDeleteComment(props.id)
+                                }
+                            />
                         </button>
                     </header>
                     <p>{props.comment}</p>
